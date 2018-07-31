@@ -9,6 +9,6 @@ mean_age = participants.age.mean()
 assert mean_age < 100
 assert mean_age > 10 
 
-np.savetxt("demeaned_" + sys.argv[1], age-mean_age)
+np.savetxt("demeaned_" + sys.argv[1], participants.age-mean_age)
 
 print("done!")
